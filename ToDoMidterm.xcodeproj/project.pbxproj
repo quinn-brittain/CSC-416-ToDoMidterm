@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A11662927E8122A00A6050F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A11662827E8122A00A6050F /* ListView.swift */; };
+		2A11662F27E817DA00A6050F /* ToDoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A11662D27E817DA00A6050F /* ToDoModel.xcdatamodeld */; };
+		2A11663227E8193B00A6050F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A11663127E8193B00A6050F /* CoreDataManager.swift */; };
 		2A9AAA7027E80C2100825D5F /* ToDoMidtermApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9AAA6F27E80C2100825D5F /* ToDoMidtermApp.swift */; };
 		2A9AAA7227E80C2100825D5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9AAA7127E80C2100825D5F /* ContentView.swift */; };
 		2A9AAA7427E80C2800825D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A9AAA7327E80C2800825D5F /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A11662827E8122A00A6050F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		2A11662E27E817DA00A6050F /* ToDoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoModel.xcdatamodel; sourceTree = "<group>"; };
+		2A11663127E8193B00A6050F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		2A9AAA6C27E80C2100825D5F /* ToDoMidterm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoMidterm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9AAA6F27E80C2100825D5F /* ToDoMidtermApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoMidtermApp.swift; sourceTree = "<group>"; };
 		2A9AAA7127E80C2100825D5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A11662A27E8123700A6050F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A9AAA7127E80C2100825D5F /* ContentView.swift */,
+				2A11662827E8122A00A6050F /* ListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A11663027E8191F00A6050F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2A11663127E8193B00A6050F /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		2A9AAA6327E80C2100825D5F = {
 			isa = PBXGroup;
 			children = (
@@ -52,9 +75,11 @@
 			isa = PBXGroup;
 			children = (
 				2A9AAA6F27E80C2100825D5F /* ToDoMidtermApp.swift */,
-				2A9AAA7127E80C2100825D5F /* ContentView.swift */,
+				2A11663027E8191F00A6050F /* Managers */,
+				2A11662A27E8123700A6050F /* Views */,
 				2A9AAA7327E80C2800825D5F /* Assets.xcassets */,
 				2A9AAA7527E80C2800825D5F /* Preview Content */,
+				2A11662D27E817DA00A6050F /* ToDoModel.xcdatamodeld */,
 			);
 			path = ToDoMidterm;
 			sourceTree = "<group>";
@@ -138,7 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9AAA7227E80C2100825D5F /* ContentView.swift in Sources */,
+				2A11662F27E817DA00A6050F /* ToDoModel.xcdatamodeld in Sources */,
 				2A9AAA7027E80C2100825D5F /* ToDoMidtermApp.swift in Sources */,
+				2A11663227E8193B00A6050F /* CoreDataManager.swift in Sources */,
+				2A11662927E8122A00A6050F /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoMidterm/Preview Content\"";
-				DEVELOPMENT_TEAM = 3278MSDFEL;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -298,7 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoMidterm/Preview Content\"";
-				DEVELOPMENT_TEAM = 3278MSDFEL;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -341,6 +369,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2A11662D27E817DA00A6050F /* ToDoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2A11662E27E817DA00A6050F /* ToDoModel.xcdatamodel */,
+			);
+			currentVersion = 2A11662E27E817DA00A6050F /* ToDoModel.xcdatamodel */;
+			path = ToDoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2A9AAA6427E80C2100825D5F /* Project object */;
 }
